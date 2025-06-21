@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Николай Фомич - Карикатуры с душой</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Amatic+SC:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+    <!-- Хэдер -->
+    <header class="header" id="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <h1 class="logo-text">Николай Фомич</h1>
+                </div>
+                <nav class="nav">
+                    <ul class="nav-list">
+                        <li><a href="#home" class="nav-link">Главная</a></li>
+                        <li><a href="#gallery" class="nav-link">Карикатуры</a></li>
+                        <li><a href="#about" class="nav-link">Обо мне</a></li>
+                    </ul>
+                </nav>
+                <div class="header-contact">
+                    <a href="mailto:nikolay.fomich@example.com" class="contact-link">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M4 4H20C21.1 4 22 4.9 22 6V18C22 19.1 21.1 20 20 20H4C2.9 20 2 19.1 2 18V6C2 4.9 2.9 4 4 4Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <polyline points="22,6 12,13 2,6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </a>
+                </div>
+                <button class="mobile-menu-toggle" id="mobile-menu-toggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Главная секция -->
+    <section class="hero" id="home">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1 class="hero-title">Карикатуры с душой от Николая Фомича</h1>
+                    <p class="hero-subtitle">Смех — лучшее лекарство. А иногда и способ сказать правду.</p>
+                    <a href="#gallery" class="hero-button">Смотреть карикатуры</a>
+                </div>
+                <div class="hero-image">
+                    <div class="hero-placeholder">
+                        <p>Скоро здесь будет карикатура</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Галерея -->
+    <section class="gallery" id="gallery">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Галерея</h2>
+                <p class="section-subtitle">Выберите карикатуру, чтобы рассмотреть поближе</p>
+            </div>
+            <div class="gallery-grid" id="gallery-grid">
+                <!-- Карикатуры будут добавляться здесь -->
+                <div class="gallery-item placeholder" data-theme="office">
+                    <div class="gallery-item-content">
+                        <div class="placeholder-icon">💼</div>
+                        <p>Про офис</p>
+                        <span class="card-subtitle">Когда понедельник снова наступил</span>
+                    </div>
+                </div>
+                <div class="gallery-item placeholder" data-theme="kitchen">
+                    <div class="gallery-item-content">
+                        <div class="placeholder-icon">🍳</div>
+                        <p>Шоу на кухне</p>
+                        <span class="card-subtitle">Кулинарные приключения</span>
+                    </div>
+                </div>
+                <div class="gallery-item placeholder" data-theme="pets">
+                    <div class="gallery-item-content">
+                        <div class="placeholder-icon">🐱</div>
+                        <p>Коты VS собаки</p>
+                        <span class="card-subtitle">Вечная война питомцев</span>
+                    </div>
+                </div>
+                <div class="gallery-item placeholder" data-theme="tech">
+                    <div class="gallery-item-content">
+                        <div class="placeholder-icon">📱</div>
+                        <p>Цифровая жизнь</p>
+                        <span class="card-subtitle">Когда WiFi важнее воздуха</span>
+                    </div>
+                </div>
+                <div class="gallery-item placeholder" data-theme="family">
+                    <div class="gallery-item-content">
+                        <div class="placeholder-icon">👨‍👩‍👧‍👦</div>
+                        <p>Семейные будни</p>
+                        <span class="card-subtitle">Домашний хаос с любовью</span>
+                    </div>
+                </div>
+                <div class="gallery-item placeholder" data-theme="transport">
+                    <div class="gallery-item-content">
+                        <div class="placeholder-icon">🚗</div>
+                        <p>В пути</p>
+                        <span class="card-subtitle">Дорожные приключения</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Биография -->
+    <section class="about" id="about">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Немного о мастере</h2>
+            </div>
+            <div class="about-content">
+                <div class="about-image">
+                    <div class="portrait-placeholder">
+                        <div class="portrait-icon">👨‍🎨</div>
+                    </div>
+                </div>
+                <div class="about-text">
+                    <p>Николай Фомич родился в 1948 году. С юности рисует шаржи, иллюстрации и карикатуры. Его стиль — это сочетание доброй иронии и социальной наблюдательности.</p>
+                    <p>Работал в районной газете, участвовал в выставках, рисовал на заказ. Сейчас делится своим творчеством онлайн.</p>
+                    <div class="copyright-notice">
+                        <p><em>Все работы авторские. Пожалуйста, уважайте труд художника.</em></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Футер -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-contacts">
+                    <a href="mailto:nikolay.fomich@example.com" class="footer-contact">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M4 4H20C21.1 4 22 4.9 22 6V18C22 19.1 21.1 20 20 20H4C2.9 20 2 19.1 2 18V6C2 4.9 2.9 4 4 4Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <polyline points="22,6 12,13 2,6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        nikolay.fomich@example.com
+                    </a>
+                </div>
+                <div class="footer-copyright">
+                    <p>&copy; Николай Фомич, 2024. Сайт создан с душой ❤️</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Модальное окно для карикатур -->
+    <div class="modal" id="modal">
+        <div class="modal-content">
+            <span class="modal-close" id="modal-close">&times;</span>
+            <img class="modal-image" id="modal-image" src="" alt="">
+            <div class="modal-caption" id="modal-caption"></div>
+        </div>
+    </div>
+
+    <script src="scripts/main.js"></script>
+</body>
+</html> 
